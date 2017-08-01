@@ -1,6 +1,6 @@
 galaxy_info:
   author: Nikki
-  description: installs openvm tools for centos 6
+  description: installs openvm tools for centos
   company: GT
   license: MIT
 
@@ -8,8 +8,6 @@ galaxy_info:
 
   platforms:
   - name: Centos
-   versions:
-   - 6
   - name: Redhat
 
   galaxy_tags: []

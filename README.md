@@ -12,8 +12,8 @@ Role Variables
 --------------
 Defaults for tools-openvm:
 
-platform: 'Redhat'
-virtualization_type: 'VMware'
+- platform: 'Redhat'
+- virtualization_type: 'VMware'
 
 Dependencies
 ------------
