@@ -1,0 +1,5 @@
+---
+# defaults file for tools-openvm
+
+platform: 'Redhat'
+virtualization_type: 'VMware'

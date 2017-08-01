@@ -1,0 +1,16 @@
+---
+- name: centos | install open-vm-tools
+  yum:
+    name: open-vm-tools
+    state: present
+    update_cache: yes
+  when: platform == "Redhat" and virtualization_type == "VMware"
+  tags: open-vm-tools
+
+- name: centos | Enable open-vm-tools
+  service:
+    name: vmtoolsd.service
+    enabled: yes
+  when: platform == "Redhat" and virtualization_type == "VMware"
+  notify: restart vmtools
+  tags: open-vm-tools

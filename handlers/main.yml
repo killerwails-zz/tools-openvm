@@ -1,0 +1,5 @@
+---
+- name: restart vmtools
+  service:
+    name: vmtoolsd.service
+    state: restarted
